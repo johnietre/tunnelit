@@ -1,6 +1,9 @@
-.PHONY: tunnelit run-test clean-test
+.PHONY: bin tunnelit run-test clean-test
 
-tunnelit:
+bin:
+	mkdir -p bin
+
+tunnelit: bin
 	go build -o bin/tunnelit .
 
 run-test:
